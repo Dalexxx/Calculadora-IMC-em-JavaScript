@@ -38,6 +38,15 @@ input{
     text-align: center;
 }
 
+input:focus::placeholder {
+    color: transparent;
+}
+
+#space{
+    font-weight: bolder;
+    font-size: larger;
+}
+
 button{
     width: 300px;
     height: 40px;
