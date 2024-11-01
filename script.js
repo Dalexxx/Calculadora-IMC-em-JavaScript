@@ -5,8 +5,10 @@ function imc(){
     obesidade.style.background = "";
     obesidadeGrave.style.background = "";
     
-    const altura = parseFloat(document.getElementById('altura').value);
-    const peso = parseFloat(document.getElementById('peso').value);
+
+    // Substitui vírgulas por pontos antes de converter
+    const altura = parseFloat(document.getElementById('altura').value.replace(',', '.'));
+    const peso = parseFloat(document.getElementById('peso').value.replace(',', '.'));
 
     if (isNaN(peso) || isNaN(altura) || peso <= 0 || altura <= 0) {
         alert("Por favor, insira valores válidos para peso e altura.");
